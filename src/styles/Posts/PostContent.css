@@ -1,0 +1,10 @@
+.postcontent-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.postcontent-container img {
+    width: 100%;
+    border-radius: 10px;
+}

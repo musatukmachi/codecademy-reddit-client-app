@@ -2,10 +2,12 @@ import React from 'react'
 import PostReaction from './PostReaction'
 import PostContent from './PostContent'
 import PostInfo from './PostInfo'
+import '../../styles/Posts/Post.css'
+import { getData } from '../../app/getData'
 
-function Post() {
+function Post(props) {
     return (
-        <div>
+        <div className="post-container">
             <PostReaction />
             <PostContent />
             <PostInfo />

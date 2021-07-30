@@ -1,0 +1,9 @@
+.sidebar-container {
+    width: 25%;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 4px rgb(97, 97, 97);
+    float: right;
+    color: seashell;
+    background-color: rgb(51, 51, 51);
+}

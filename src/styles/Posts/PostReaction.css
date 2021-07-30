@@ -1,0 +1,6 @@
+.postreaction-container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    align-items: center;
+}
