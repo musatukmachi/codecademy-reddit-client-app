@@ -4,7 +4,10 @@ export const getData = (subreddit) => {
     fetch(`https://reddit.com/r/${subreddit}.json`,
     {
         method: 'GET',
-        mode: "no-cors"
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json'
+        }
     })
     .then(response => {
     if(response.ok){

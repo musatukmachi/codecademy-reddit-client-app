@@ -8,8 +8,8 @@ import { getData } from '../../app/getData'
 function Post(props) {
     return (
         <div className="post-container">
-            <PostReaction />
-            <PostContent />
+            <PostReaction postData={props.postData} />
+            <PostContent postData={props.postData} />
             <PostInfo />
         </div>
     )

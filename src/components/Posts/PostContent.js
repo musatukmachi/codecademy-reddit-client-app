@@ -1,12 +1,12 @@
 import React from 'react'
 import '../../styles/Posts/PostContent.css'
 
-function PostContent() {
+function PostContent(props) {
     
     return (
         <div className="postcontent-container">
-            <h5>Title somethin somthing a post swith some content lorem ipsum upsum orem</h5>
-            <img src="images/3.jpg" />
+            <h5>{props.postData.title}</h5>
+            <img src={props.postData.src} />
         </div>
     )
 }
