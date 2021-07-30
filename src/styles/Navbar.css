@@ -1,0 +1,57 @@
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin: 0 0;
+    box-shadow: 0 -10px 40px rgb(119, 119, 119);
+}
+
+.logo {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+#reddit-logo {
+    float: left;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    padding-right: 0;
+    color: blue;
+}
+
+#reddit-heading {
+    float: left;
+    padding: 1rem 0;
+    padding-left: 0.5rem;
+    margin: 0 0;
+    color: blue;
+}
+
+#minimal-heading {
+    float: left;
+    padding: 1rem 0;
+    margin: 0 0;
+    color: seashell;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.searchbar input {
+    border: none;
+    width: 20rem;
+    font-size: 0.9rem;
+    background-color: rgb(240, 240, 240);
+    padding: 0.3rem 0.7rem;
+}
+
+.searchbar i {
+    color: grey;
+    margin-left: 0.5rem;
+}

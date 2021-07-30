@@ -1,0 +1,10 @@
+.post-container {
+    width: 67%;
+    border: 1px solid white;
+}
+
+.sidebar-container {
+    width: 33%;
+    border: 1px solid white;
+    float: right;
+}
