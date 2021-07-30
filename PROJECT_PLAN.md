@@ -6,10 +6,8 @@
 	* Logo
 	* Search bar
 * Main
-	* SideBar
-		* Subreddit
-	* PostContainer
-		* Post
-			* PostContent
-			* PostReaction
-			* PostInfo
+	* Subreddit
+	* Post
+		* PostContent
+		* PostReaction
+		* PostInfo
