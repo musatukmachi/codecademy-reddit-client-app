@@ -12,8 +12,9 @@ function Main() {
     const createPostDataArray = () => {
         let postDataArray = [];
         let jsonData = getData(subreddit);
+
         console.log(jsonData);
-        let json = JSON.parse(jsonData);
+        let json = jsonData;//JSON.parse(JSON.stringify(jsonData));
 
         let dataArray = json.data.children.map(post => post.data);
         for (let post of dataArray) {
