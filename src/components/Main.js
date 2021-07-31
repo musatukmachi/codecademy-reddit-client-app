@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Post from './Posts/Post';
-import { getData } from '../app/getData';
+// import { getData } from '../app/getData';
 import '../styles/Main.css';
 import '../styles/Sidebar.css';
-// import * as jsonData from '../data.json';
+import * as json from '../data.json';
 
 function Main() {
     const [subreddit, setSubreddit] = useState('pics');
@@ -11,12 +11,9 @@ function Main() {
     
     const createPostDataArray = () => {
         let postDataArray = [];
-        let jsonData = getData(subreddit);
+        // let jsonData = getData(subreddit);
 
-        console.log(jsonData);
-        let json = jsonData;//JSON.parse(JSON.stringify(jsonData));
-
-        let dataArray = json.data.children.map(post => post.data);
+        let dataArray = json.default.data.children.map(post => post.data);
         for (let post of dataArray) {
             if(post.post_hint == 'image') {
                 postDataArray.push({
