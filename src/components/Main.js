@@ -9,32 +9,32 @@ function Main() {
     const [subreddit, setSubreddit] = useState('pics');
     const [postList, setPostList] = useState([]);
     
-    const createPostDataArray = () => {
-        let postDataArray = [];
-        let jsonData = getData(subreddit);
-
-        console.log(jsonData);
-        let json = jsonData;//JSON.parse(JSON.stringify(jsonData));
-
-        let dataArray = json.data.children.map(post => post.data);
-        for (let post of dataArray) {
-            if(post.post_hint == 'image') {
-                postDataArray.push({
-                    title: post.title,
-                    src: post.url_overridden_by_dest,
-                    author: post.author_fullname,
-                    upVotes: post.ups
-                });
+    const createPostDataArray = async () => {
+        return getData(subreddit)
+        .then(dataArray => {
+            let postDataArray = [];
+            for (let post of dataArray) {
+                if(post.post_hint == 'image') {
+                    postDataArray.push({
+                        id: dataArray.indexOf(post),
+                        title: post.title,
+                        src: post.url_overridden_by_dest,
+                        author: post.author,
+                        upVotes: post.ups
+                    });
+                }
             }
-        }
-        return postDataArray;
+            return postDataArray;
+        });
     }
 
     useEffect(() => {
-        setPostList(createPostDataArray());
+        createPostDataArray().then(postDataArray => {
+            setPostList(postDataArray);
+        });
     },[]);
 
-    const componentPostList = postList.map(postData => <Post postData={postData} />);
+    const componentPostList = postList.map(postData => <Post key={postData.id} postData={postData} />);
 
     return (
         <div className="main-container">
