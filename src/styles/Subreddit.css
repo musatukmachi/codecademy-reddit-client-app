@@ -1,0 +1,19 @@
+.subreddit-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.subreddit-container img {
+    width: 15%;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.subreddit-container:hover {
+    background-color: grey;
+    cursor: pointer;
+}
