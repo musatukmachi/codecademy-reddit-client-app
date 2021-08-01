@@ -46,6 +46,7 @@ nav {
     font-size: 0.9rem;
     background-color: rgb(240, 240, 240);
     padding: 0.3rem 0.7rem;
+    border-radius: 3px;
 }
 
 .searchbar i {

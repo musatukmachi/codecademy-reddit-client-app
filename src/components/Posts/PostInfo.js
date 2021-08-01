@@ -1,9 +1,11 @@
 import React from 'react'
+import '../../styles/Posts/PostInfo.css'
 
-function PostInfo() {
+function PostInfo(props) {
     return (
-        <div>
-            
+        <div className="postinfo-container">
+            <hr />
+            {props.postData.author}
         </div>
     )
 }
