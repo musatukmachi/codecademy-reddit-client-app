@@ -40,7 +40,6 @@ function Main() {
                     icon: sub.icon_img
                 });
             }
-            console.log(subredditArray);
             return subredditArray;
         })
     }

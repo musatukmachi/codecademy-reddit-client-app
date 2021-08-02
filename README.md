@@ -1,3 +1,7 @@
+# React Client
+
+This project is part of the codecademy course: Full-Stack Engineer. The goal is to bring together and implement various subjects such as React, Asynchronous Javascript and Requests.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
